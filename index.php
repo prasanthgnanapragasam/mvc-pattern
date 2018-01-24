@@ -21,4 +21,5 @@ spl_autoload_register('autoload');
 $reqClass = ucfirst($_REQUEST['c'])."Controller";
 
 $obj = new $reqClass();
+$obj->$_REQUEST['m']();
 
